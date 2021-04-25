@@ -1,0 +1,8 @@
+prefix=/home/alinx/catkin_ws/src/lio_sam_data/build/devel
+
+Name: lio_sam_data
+Description: Description of lio_sam_data
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

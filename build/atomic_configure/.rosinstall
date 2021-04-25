@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/alinx/catkin_ws/src/lio_sam_data/build/devel/setup.sh
