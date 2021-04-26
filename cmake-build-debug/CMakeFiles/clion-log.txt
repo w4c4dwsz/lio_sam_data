@@ -1,23 +1,10 @@
 /home/alinx/clion-2021.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/alinx/catkin_ws/src/lio_sam_data
--- The C compiler identification is GNU 9.3.0
--- The CXX compiler identification is GNU 9.3.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- Using CATKIN_DEVEL_PREFIX: /home/alinx/catkin_ws/src/lio_sam_data/cmake-build-debug/devel
 -- Using CMAKE_PREFIX_PATH: /home/alinx/catkin_ws/devel;/opt/ros/noetic
 -- This workspace overlays: /home/alinx/catkin_ws/devel;/opt/ros/noetic
 -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python3
 -- Using Debian Python package layout
--- Found PY_em: /usr/lib/python3/dist-packages/em.py  
 -- Using empy: /usr/lib/python3/dist-packages/em.py
 -- Using CATKIN_ENABLE_TESTING: ON
 -- Call enable_testing()
@@ -50,18 +37,11 @@ CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (c
 
 
 -- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") 
--- Found Threads: TRUE  
 -- Using Python nosetests: /usr/bin/nosetests3
 -- catkin 0.8.9
 -- BUILD_SHARED_LIBS is on
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
--- Checking for module 'eigen3'
---   Found eigen3, version 3.3.9
--- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
 -- Eigen found (include: /usr/include/eigen3, version: 3.3.9)
--- Checking for module 'flann'
---   Found flann, version 1.9.1
--- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
 -- The imported target "vtkParseOGLExt" references the file
    "/usr/bin/vtkParseOGLExt-7.1"
 but this file does not exist.  Possible reasons include:
@@ -98,8 +78,6 @@ but this file does not exist.  Possible reasons include:
    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
 but not all the files it references.
 
--- Checking for module 'libusb-1.0'
---   Found libusb-1.0, version 1.0.23
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)
   does not match the name of the calling package (OpenNI).  This can lead to
@@ -113,7 +91,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found USB_10: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
 -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)
@@ -141,7 +118,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found libusb-1.0: /usr/include  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)
   does not match the name of the calling package (OpenNI).  This can lead to
@@ -170,7 +146,6 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
--- Found Qhull: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so  
 -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so)
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)
@@ -196,7 +171,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_KDTREE)
   does not match the name of the calling package (PCL).  This can lead to
@@ -207,7 +181,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_OCTREE)
   does not match the name of the calling package (PCL).  This can lead to
@@ -218,7 +191,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_SEARCH)
   does not match the name of the calling package (PCL).  This can lead to
@@ -229,7 +201,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_SAMPLE_CONSENSUS) does not match the name of the calling package
@@ -241,7 +212,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_FILTERS) does not match the name of the calling package (PCL).  This
@@ -252,7 +222,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_2D)
   does not match the name of the calling package (PCL).  This can lead to
@@ -263,7 +232,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_2D: /usr/include/pcl-1.10  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_GEOMETRY) does not match the name of the calling package (PCL).  This
@@ -274,7 +242,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_IO)
   does not match the name of the calling package (PCL).  This can lead to
@@ -285,7 +252,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_FEATURES) does not match the name of the calling package (PCL).  This
@@ -296,7 +262,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_ML)
   does not match the name of the calling package (PCL).  This can lead to
@@ -307,7 +272,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_SEGMENTATION) does not match the name of the calling package (PCL).
@@ -318,7 +282,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_VISUALIZATION) does not match the name of the calling package (PCL).
@@ -329,7 +292,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_SURFACE) does not match the name of the calling package (PCL).  This
@@ -340,7 +302,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_REGISTRATION) does not match the name of the calling package (PCL).
@@ -351,7 +312,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_KEYPOINTS) does not match the name of the calling package (PCL).  This
@@ -362,7 +322,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_TRACKING) does not match the name of the calling package (PCL).  This
@@ -373,7 +332,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_RECOGNITION) does not match the name of the calling package (PCL).
@@ -384,7 +342,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_STEREO)
   does not match the name of the calling package (PCL).  This can lead to
@@ -395,7 +352,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_APPS)
   does not match the name of the calling package (PCL).  This can lead to
@@ -406,7 +362,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_IN_HAND_SCANNER) does not match the name of the calling package (PCL).
@@ -417,7 +372,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_POINT_CLOUD_EDITOR) does not match the name of the calling package
@@ -429,7 +383,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args`
   (PCL_OUTOFCORE) does not match the name of the calling package (PCL).  This
@@ -440,7 +393,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
 CMake Warning (dev) at /home/alinx/clion-2021.1/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake:426 (message):
   The package name passed to `find_package_handle_standard_args` (PCL_PEOPLE)
   does not match the name of the calling package (PCL).  This can lead to
@@ -451,7 +403,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:24 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/alinx/catkin_ws/src/lio_sam_data/cmake-build-debug

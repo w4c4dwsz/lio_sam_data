@@ -7202,18 +7202,6 @@
 			"value" : "/opt/ros/noetic/share/nav_msgs/cmake"
 		},
 		{
-			"name" : "pcl_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for pcl."
-				}
-			],
-			"type" : "PATH",
-			"value" : "pcl_DIR-NOTFOUND"
-		},
-		{
 			"name" : "pcl_conversions_DIR",
 			"properties" : 
 			[
