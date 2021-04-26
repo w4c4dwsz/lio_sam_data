@@ -31,7 +31,7 @@ public:
     {
         lioSamInputLidarData = nh.advertise<sensor_msgs::PointCloud2>("points_raw", 100);
         lioSamOutPutLidarData = nh.subscribe<sensor_msgs::PointCloud2>("/lslidar_point_cloud", 100, &node::lidarCallback, this);
-        ROS_INFO("this is node class make success");
+        ROS_DEBUG_NAMED("data", "this is node class make success");
     }
 
     /**
@@ -41,7 +41,7 @@ public:
      */
     void lidarCallback(const sensor_msgs::PointCloud2 inputLidarData)
     {
-        ROS_INFO("enter lidarCallbac\n");
+        ROS_DEBUG_NAMED("data", "enter lidarCallbac\n");
 //    从msgs中提取出点云数据
         pcl::PointCloud<pcl::PointXYZI>::Ptr inputCloud(new pcl::PointCloud<pcl::PointXYZI>);
         pcl::PointCloud<PointXYZIRT>::Ptr outputCloud(new pcl::PointCloud<PointXYZIRT>);
@@ -64,7 +64,7 @@ public:
             int columnIndex = round(threat / ang_res_x);
             float times = (columnIndex / static_cast<float>(Horizon_SCAN)) * 0.1;
 
-            printf("[x, y, z, rowIndex, threat, columnIndex, times] = [%f, %f, %f, %d, %f, %d, %f]\n",
+            ROS_DEBUG_NAMED("data", "[x, y, z, rowIndex, threat, columnIndex, times] = [%f, %f, %f, %d, %f, %d, %f]\n",
                    point.x, point.y, point.z, rowIndex, threat, columnIndex, times);
 
             PointXYZIRT outPoint;
@@ -76,7 +76,9 @@ public:
             outputCloud->push_back(outPoint);
         }
         pcl::toROSMsg(*outputCloud, outputMsg);
-        ROS_INFO("enter callback");
+        outputMsg.header = inputLidarData.header;
+        ROS_DEBUG_NAMED("data", "enter callback");
+        ROS_INFO_NAMED("data","this is a data info\n");
         lioSamInputLidarData.publish(outputMsg);
 
     }
@@ -96,10 +98,10 @@ private:
 
 int main(int argc, char **argv)
 {
-    ROS_INFO("this");
+
     ros::init(argc, argv, "lio_sam_data_node");
     node n;
-    ROS_INFO("INIT SUCESS\n");
+    ROS_INFO_NAMED("data", "INIT SUCESS\n");
     while (ros::ok())
     {
         ros::spinOnce();

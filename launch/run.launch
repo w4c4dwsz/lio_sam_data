@@ -1,0 +1,26 @@
+<launch>
+   <!--- Set ROS Log -->
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find lio_sam)/config/custom_rosconsole.conf" />
+
+    <!-- Parameters -->
+    <rosparam file="$(find lio_sam)/config/params.yaml" command="load" />
+
+    <rosparam file="$(find lio_sam)/config/config.yaml" command="load" ns="tes23t" />
+
+    <!--- LOAM -->
+    <include file="$(find lio_sam)/launch/include/module_loam.launch" />
+
+    <!--- Robot State TF -->
+    <include file="$(find lio_sam)/launch/include/module_robot_state_publisher.launch" />
+
+    <!--- Run Navsat -->
+    <include file="$(find lio_sam)/launch/include/module_navsat.launch" />
+
+    <!--- Run data process node -->
+    <node pkg="lio_sam_data" type="lio_sam_data_node"   name="lio_sam_data_node"    output="screen"/>
+
+    <!-- Run rosbag -->
+    <node pkg="rosbag" type="play" name="rosbag_play" args="$(env HOME)/catkin_ws/test0227.bag" output="screen"   />
+
+
+</launch>
